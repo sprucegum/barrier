@@ -24,5 +24,5 @@ mkdir build || exit 1
 cd build || exit 1
 echo Starting Barrier $B_BUILD_TYPE build...
 $B_CMAKE $B_CMAKE_FLAGS .. || exit 1
-make || exit 1
+make -j6 || exit 1
 echo "Build completed successfully"
